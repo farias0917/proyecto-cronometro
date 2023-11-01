@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h1{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.pantalla{
+    user-select: none;
+}
+
+.pantalla .cronometro{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 20px 5px #aef3f9;
+    border: none;
+    background-color: #38b3bf;
+}
+
+.pantalla .cronometro span{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 550px;
+    color: #c9faff;
+}
+
+.cronometro span.separador-mili,
+.cronometro span.milisegundo{
+    color: #ffffff;
+}
+
+.pantalla .botones{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.botones button{
+    padding: 6px 16px;
+    outline: none;
+    border: none;
+    margin: 0 10px;
+    color: #38b3bf;
+    background-color: #f5f5f5;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: .9rem;
+    cursor: pointer;
+    box-shadow: 3px 4px 3px 0 #38b3bf;
+}
+
+.botones button.on{
+    pointer-events: none;
+    opacity: .5;
+}
